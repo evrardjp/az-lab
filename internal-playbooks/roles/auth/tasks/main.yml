@@ -1,0 +1,10 @@
+---
+- name: Add all user keys
+  debug:
+    msg: "Woot"
+- name: Add all user keys
+  ansible.posix.authorized_key:
+    user: root
+    state: present
+    key: "{{ item }}"
+  loop: "{{ auth_keys }}"
