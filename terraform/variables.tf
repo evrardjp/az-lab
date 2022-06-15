@@ -2,7 +2,6 @@
 
 variable "sshkey" {
   type		= string
-  default 	= ""
 }
 
 ################
