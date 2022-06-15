@@ -1,5 +1,11 @@
-terraform.tfstate
-terraform.tfstate.backup
-terraform.tfvars
+# Terraform States
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+
+# Terraform internal tools
 .terraform
 .terraform.lock.hcl
+
+# User defined variables
+terraform.tfvars
